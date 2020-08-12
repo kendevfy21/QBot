@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
   "manifestVersion": "1.5",
   "version": "1.0.0",
-  "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+  "id": "5d83cbf9-d385-43b3-b3b7-154bf30050df",
   "packageName": "qbot",
   "developer": {
-    "name": "UNSW Sydney",
+    "name": "North Contoso University",
     "websiteUrl": "https://www.unsw.edu.au/QBot",
     "privacyUrl": "https://www.unsw.edu.au/QBot/privacy",
     "termsOfUseUrl": "https://www.unsw.edu.au/QBot/tou"
@@ -25,7 +25,7 @@
   "accentColor": "#6264A7",
   "configurableTabs": [
       {
-        "configurationUrl": "https://qbot-questions-tab.azurewebsites.net/config?upn={loginHint}&tid={tid}&gid={groupId}&cname={channelName}",
+        "configurationUrl": "https://qbotedukentwo-questions.azurewebsites.net/config?upn={loginHint}&tid={tid}&gid={groupId}&cname={channelName}",
         "canUpdateConfiguration": true,
         "scopes": [
           "team"
@@ -34,7 +34,7 @@
     ],
   "bots": [
     {
-      "botId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+      "botId": "5d83cbf9-d385-43b3-b3b7-154bf30050df",
       "scopes": [
         "team"
       ]
@@ -44,7 +44,7 @@
     {
       "entityId": "DashboardTab",
       "name": "Dashboard",
-      "contentUrl": "https://qbot-dashboard-tab.azurewebsites.net/home?upn={loginHint}&tid={tid}&gid={groupId}&uid={userObjectId}",
+      "contentUrl": "https://qbotedukentwo-dashboard.azurewebsites.net/home?upn={loginHint}&tid={tid}&gid={groupId}&uid={userObjectId}",
       "scopes": [ "personal" ]
     }
   ],
@@ -52,5 +52,5 @@
     "identity",
     "messageTeamMembers"
   ],
-  "validDomains": [ "qbot-dashboard-tab.azurewebsites.net", "qbot-questions-tab.azurewebsites.net", "qbot-api.azurewebsites.net" ]
+  "validDomains": [ "qbotedukentwo-dashboard.azurewebsites.net", "qbotedukentwo-questions.azurewebsites.net", "qbotedukentwo.azurewebsites.net" ]
 }
